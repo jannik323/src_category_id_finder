@@ -8,7 +8,7 @@ function findgame(self){
 
     let s = document.createElement("script");
     s.id = "deleteme"
-    s.src = `https://speedrun.com/api/v1/games?bulk=yes&max=20&name=${encodeURIComponent(self.value)}&callback=listgames`;
+    s.src = `https://speedrun.com/api/v1/games?bulk=yes&max=100&name=${encodeURIComponent(self.value)}&callback=listgames`;
     document.body.appendChild(s);
 }
 
@@ -51,7 +51,7 @@ function listcategories(data){
     data.data.forEach(game => {
         let op = document.createElement("option");
         op.value = game.id;
-        op.innerHTML = game.name;
+        op.innerHTML = game.name+" "+cate.type;;
         list.appendChild(op);
     });
     getid(list);
