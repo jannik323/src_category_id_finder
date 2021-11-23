@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category finder</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <input type="text" onchange="findgame(this)" name="game" id="game">
+    <select name="games" id="games" onchange="findcategories(this);"></select>
+    <select name="categories" id="categories" onchange="getid(this)"></select>
+    <input type="text" id="displayid" disabled autocomplete="off">
+    
+</body>
+</html>
