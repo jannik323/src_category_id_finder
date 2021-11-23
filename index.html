@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category finder</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" onchange="findgame(this)" name="game" id="game">
-    <select name="games" id="games" onchange="findcategories(this);"></select>
-    <select name="categories" id="categories" onchange="getid(this)"></select>
-    <input type="text" id="displayid" disabled autocomplete="off">
+
+    <div id="all" class="flexcol">
+
+        <div id="gamefinder" class="flexrow">
+            <input type="text" onchange="findgame(this)" placeholder="search for game" name="game" id="game">
+            <select name="games" id="games" onchange="findcategories(this);"></select>
+        </div>
+    
+        <div id=categories class="flexcol">
+    
+        </div>
+    </div>
     
 </body>
 </html>

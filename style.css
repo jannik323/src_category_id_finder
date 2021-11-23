@@ -1,0 +1,40 @@
+body,html{
+margin:0;
+padding:0;
+}
+
+body{
+    padding:1rem
+}
+
+.flexrow{
+    display:flex;
+    flex-direction: row;
+}
+
+.flexcol{
+    display:flex;
+    flex-direction:column
+}
+
+#categories{
+    border: 1px solid black;
+    border-radius:.5rem ;
+    padding: .5rem;
+}
+
+#gamefinder{
+    border: 1px solid black;
+    border-radius:.5rem ;
+    padding: .5rem;
+}
+
+#all>*{
+margin-bottom: .5rem;
+}
+
+#all{
+    border: 1px solid black;
+    border-radius:.5rem ;
+    padding: .5rem;
+}

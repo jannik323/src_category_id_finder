@@ -48,16 +48,10 @@ function listcategories(data){
     let list = document.getElementById("categories");
     list.innerHTML = "";
 
-    data.data.forEach(game => {
-        let op = document.createElement("option");
-        op.value = game.id;
-        op.innerHTML = game.name+" "+cate.type;;
-        list.appendChild(op);
+    data.data.forEach(cate => {
+        let div = document.createElement("div");
+        div.innerHTML = cate.name+" "+cate.type+" id: "+ cate.id;
+        
+        list.appendChild(div);
     });
-    getid(list);
-}
-
-function getid(self){
-    document.getElementById("displayid").value = self.value;
-    
 }
