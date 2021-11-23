@@ -10,17 +10,17 @@
 </head>
 <body>
 
-    <div id="all" class="flexcol">
+        <div id="gamefinder" class="flexcol">
+            <input type="text" onchange="findgame(this)" autocomplete="off" placeholder="search for a game" name="game" id="game">
+            <select style="display:none" name="games" id="games" onchange="findcategories(this);"></select>
+            <select style="display:none" name="categories" id="categories" onchange="findid(this);"></select>
+            <input style="display:none;" type="text" name="displayid" disabled id="displayid">
+            <select style="display:none" name="levels" id="levels" onchange="displaylevelid(this);"></select>
+            <input style="display:none;" type="text" name="displaylevelid" disabled id="displaylevelid">
 
-        <div id="gamefinder" class="flexrow">
-            <input type="text" onchange="findgame(this)" placeholder="search for game" name="game" id="game">
-            <select name="games" id="games" onchange="findcategories(this);"></select>
         </div>
     
-        <div id=categories class="flexcol">
-    
-        </div>
-    </div>
+
     
 </body>
 </html>
